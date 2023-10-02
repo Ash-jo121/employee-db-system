@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="header">
+        <h1>Employee Database management system</h1>
+        <button class="add-employee">Add Employee</button>
+      </div>
+      <div class="grid">
+        <div class="box">
+          <div>Employee List</div>
+          <hr />
+          <div class="employee-list"></div>
+        </div>
+        <div class="box">
+          <div>Employee Information</div>
+          <hr />
+          <div class="employee-info"></div>
+        </div>
+      </div>
+    </div>
+    <div class="add-modal">
+      <div class="modal">
+        <div>Add Employee Details</div>
+        <form class="add-employee-form">
+          <div>
+            <input placeholder="First Name" type="text" name="fName" />
+            <input placeholder="Last Name" type="text" name="lName" />
+          </div>
+          <div>
+            <input
+              placeholder="Image Url (Optional)"
+              type="text"
+              name="image"
+            />
+            <input placeholder="Email" type="text" name="email" />
+          </div>
+          <div>
+            <input placeholder="Contact" type="text" name="contact" />
+            <input placeholder="Address" type="text" name="address" />
+          </div>
+          <div>
+            <input placeholder="Salary" type="text" name="salary" />
+            <input type="date" type="text" name="date" />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>

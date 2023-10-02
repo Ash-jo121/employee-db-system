@@ -1,0 +1,110 @@
+body {
+  font-family: sans-serif;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+:root {
+  --modal-bg: rgba(141, 141, 141, 0.541);
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+
+.add-employee {
+  height: 40px;
+  margin-top: 1%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: auto;
+  margin-left: 48%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 0;
+  height: 100vh;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 10px;
+  height: 70%;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.employee-single-list {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 20%;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+.employee-single-list:hover {
+  background-color: gray;
+}
+
+.employee-info {
+  padding-top: 70px;
+}
+
+button {
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+.employee-title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+}
+
+.employee-second {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  margin-top: 10px;
+}
+/* Modal class */
+.add-modal {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--modal-bg);
+  display: none;
+}
+
+.modal {
+  transform: translate(25%, 200px);
+  width: 70%;
+  padding: 15px;
+  border: 1px solid black;
+  background-color: white;
+  margin: 1px;
+  height: 30%;
+}
+
+.add-employee-form > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-employee-form > button {
+  margin: 5px;
+}
+
+.add-employee-form > div > input {
+  margin: 5px;
+}
